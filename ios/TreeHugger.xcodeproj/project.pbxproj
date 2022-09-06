@@ -168,6 +168,9 @@
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = TreeHuggerTests;
+			packageProductDependencies = (
+				1285750517E160297E93403F /* Mapbox */,
+			);
 			productName = TreeHuggerTests;
 			productReference = 00E356EE1AD99517003FC87E /* TreeHuggerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -190,6 +193,9 @@
 			dependencies = (
 			);
 			name = TreeHugger;
+			packageProductDependencies = (
+				762B240262B9E2C632402C07 /* Mapbox */,
+			);
 			productName = TreeHugger;
 			productReference = 13B07F961A680F5B00A75B9A /* TreeHugger.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				FADEA7EA1BD80E5DC2F044B6 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -697,6 +706,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FADEA7EA1BD80E5DC2F044B6 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = exactVersion;
+				version = 5.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1285750517E160297E93403F /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADEA7EA1BD80E5DC2F044B6 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+		762B240262B9E2C632402C07 /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADEA7EA1BD80E5DC2F044B6 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
